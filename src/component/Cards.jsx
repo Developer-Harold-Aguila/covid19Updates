@@ -9,7 +9,7 @@ const Cards = (props) => {
 
   return (
       <div>
-            <Table hover responsive>
+            <Table responsive>
               <thead>
                 <tr>
                   <th>Country</th>
@@ -24,13 +24,13 @@ const Cards = (props) => {
                   {
                     Object.entries(props.data).map(([key, value]) => {
                         return <CovidInfos key={key}
-                                           code={value.code}
-                                           name={value.name}
-                                           totalCases={value.latest_data.confirmed}
-                                           totalRecovered={value.latest_data.recovered}
-                                           totalDeaths={value.latest_data.deaths}
-                                           newCases={value.today.confirmed}
-                                           newDeath={value.today.deaths}/>})
+                                           code={value.countryInfo.iso2}
+                                           name={value.country}
+                                           cases={value.cases}
+                                           deaths={value.deaths}
+                                           recovered={value.recovered}
+                                           todayCases={value.todayCases}
+                                           todayDeaths={value.todayDeaths}/>})
                   }
               </tbody>
             </Table>

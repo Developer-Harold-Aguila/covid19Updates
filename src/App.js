@@ -9,8 +9,8 @@ class App extends Component{
   }
 
   async componentDidMount(){
-    const modifiedData = await fetchData();
-    this.setState({ data: modifiedData });
+    const data = await fetchData();
+    this.setState({ data: data });
   }
 
   render(){
