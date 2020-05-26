@@ -19,8 +19,6 @@ export const fetchData = async () => {
                            flag: value.countryInfo.flag
                            critical: value.critical})*/
 
-    console.log(data)
-
     return data;
   }catch (error){
 

@@ -15,12 +15,12 @@ class App extends Component{
 
   render(){
     const {data} = this.state;
+    console.log(data);
     return (
       <div>
-        <Cards data={data}/>
+        {<Cards data={data}/>}
       </div>
     );
   }
 }
-
 export default App;
