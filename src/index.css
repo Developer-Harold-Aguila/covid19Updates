@@ -4,12 +4,27 @@
   margin-right: 10px;
 }
 
-/*
+.statusTable {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.statusTable th{
+    background: #ffffff;
+    padding:0px 50px 0px 0px;
+}
+
+	/*  Define the background color for all the ODD background rows  */
+.statusTable tr:nth-child(odd){
+		background: #b1cce4;
+}
+
+  /*
 	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
 	*/
 	@media
 	  only screen
-    and (max-width: 760px), (min-device-width: 768px)
+    and (max-width: 760px), (min-device-width: 760px)
     and (max-device-width: 1024px)  {
 
 		/* Force table to not be like tables anymore */
@@ -23,33 +38,32 @@
 			top: -9999px;
 			left: -9999px;
 		}
-
-    tr {
-      margin: 0rem 0rem 1rem 0rem;
-    }
+    tr { border: 1px solid #ccc; }
 
     tr:nth-child(odd) {
       background: #b1cce4;
     }
 
-		td {
-			/* Behave  like a "row" */
-			border: none;
-			border-bottom: 1px solid #eee;
-			position: relative;
-			padding-left: 50%;
-		}
+    td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50%;
 
-		td:before {
-			/* Now like a table header */
-			position: absolute;
-			/* Top/left values mimic padding */
-			top: 0;
-			left: 6px;
-			width: 45%;
-			padding-right: 10px;
-			white-space: nowrap;
-		}
+    }
+
+    td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 0;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+
 
 		/*
 		Label the data
@@ -58,7 +72,7 @@
 		td:nth-of-type(1):before { content: "Country"; }
 		td:nth-of-type(2):before { content: "Total Cases"; }
 		td:nth-of-type(3):before { content: "Total Deaths"; }
-		td:nth-of-type(4):before { content: "Total Recoverd"; }
+		td:nth-of-type(4):before { content: "Total Recovered"; }
 		td:nth-of-type(5):before { content: "Today Cases"; }
 		td:nth-of-type(6):before { content: "Today Deaths"; }
 	}

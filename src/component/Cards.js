@@ -33,13 +33,13 @@ const Cards = (props) => {
 
   return (
       <div className="statusContainer">
-            <table role="table">
+            <table className="statusTable" role="table">
               <thead role="rowgroup">
                 <tr role="row">
                     <th role = "columnheader">Country</th>
                     <th role = "columnheader">Total Cases</th>
                     <th role = "columnheader">Total Deaths</th>
-                    <th role = "columnheader">Total Recoverd</th>
+                    <th role = "columnheader">Total Recovered</th>
                     <th role = "columnheader">Today Cases</th>
                     <th role = "columnheader">Today Deaths</th>
                 </tr>
