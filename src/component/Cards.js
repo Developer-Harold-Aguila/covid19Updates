@@ -5,31 +5,10 @@ import Spinner from './Spinner'
 const Cards = (props) => {
 
 
+
   if(Object.keys(props.data).length === 0){
     return <Spinner />
   }
-
-  /*return (
-    <MaterialTable
-      title="Covid-19 Status Updates"
-      columns={[
-        { title: '',
-          field: 'countryInfo.flag',
-          render: rowData => <img src={rowData.countryInfo.flag} style={{width: 40, borderRadius: '10%'}}/>
-        },
-        { title: 'Country', field: 'country' },
-        { title: 'Total Cases', field: 'cases' },
-        { title: 'Total Deaths', field: 'deaths' },
-        { title: 'Total Recoverd', field: 'recovered' },
-        { title: 'Today Cases', field: 'todayCases' },
-        { title: 'Today Deaths', field: 'todayDeaths' },
-      ]}
-      data={props.data}
-      options={{
-        search: true
-      }}
-    />
-  )*/
 
   return (
       <div className="statusContainer">

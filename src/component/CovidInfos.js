@@ -1,6 +1,10 @@
 import React from 'react';
 
 const CovidInfos = (props) => {
+  var ts = new Date(props.updated);
+  console.log(ts.toLocaleString());
+
+
   return(
       <tr role="row">
         <td role="cell"><img className="countryFlag" alt="flags" src={props.flag}/>{props.name}</td>

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {fetchData} from './api'
 import './App.css';
 import Cards from './component/Cards';
+import Banner from './Banner'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 
 class App extends Component{
   state = {
@@ -15,11 +17,11 @@ class App extends Component{
 
   render(){
     const {data} = this.state;
-    console.log(data);
     return (
-      <div>
-        {<Cards data={data}/>}
-      </div>
+        <div>
+          <Banner />
+          <Cards data={data}/>
+        </div>
     );
   }
 }
