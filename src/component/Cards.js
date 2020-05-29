@@ -13,7 +13,7 @@ const Cards = (props) => {
   return (
       <div className="statusContainer">
             <table className="statusTable" role="table">
-              <thead role="rowgroup">
+              <thead role="rowgroup" className="sticky">
                 <tr role="row">
                     <th role = "columnheader">Country</th>
                     <th role = "columnheader">Total Cases</th>

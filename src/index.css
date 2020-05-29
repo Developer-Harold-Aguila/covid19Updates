@@ -16,11 +16,6 @@
   margin-top: -50px;
   margin-left: -50px;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
 
 .statusTable {
     margin-left:auto;
@@ -35,6 +30,11 @@
 	/*  Define the background color for all the ODD background rows  */
 .statusTable tr:nth-child(odd){
 		background: #b1cce4;
+}
+
+.sticky th{
+    position: sticky;
+    top: 0;
 }
 
   /*
