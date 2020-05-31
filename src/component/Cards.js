@@ -17,10 +17,10 @@ const Cards = (props) => {
                 <tr role="row">
                     <th role = "columnheader">Country</th>
                     <th role = "columnheader">Total Cases</th>
-                    <th role = "columnheader">Total Deaths</th>
                     <th role = "columnheader">Total Recovered</th>
-                    <th role = "columnheader">Today Cases</th>
-                    <th role = "columnheader">Today Deaths</th>
+                    <th role = "columnheader">Total Deaths</th>
+                    <th role = "columnheader">Today New Cases</th>
+                    <th role = "columnheader">Today New Deaths</th>
                 </tr>
               </thead>
 
